@@ -25,4 +25,33 @@ The Netflix dataset schema:
 | `description`    | VARCHAR(250) | Brief summary of the content.        |
 
 
+### 1. Most Popular Genres Globally
+This query explores the most popular genres in Netflix’s content library.
+
+```sql
+SELECT  
+    UNNEST(STRING_TO_ARRAY(listed_in, ',')) AS genre,  
+    COUNT(show_id) AS genre_count  
+FROM netflix  
+GROUP BY genre  
+ORDER BY genre_count DESC;
+```
+
+
+### 2. Identify Seasonal Trends in Content Additions
+Find which month has the highest number of content additions over the years.
+ 
+
+```sql
+SELECT 
+    EXTRACT(MONTH FROM TO_DATE(date_added, 'Month DD, YYYY')) AS month, 
+    COUNT(*) AS total_content
+FROM netflix
+GROUP BY month
+ORDER BY total_content DESC;
+
+```
+
+
+
 
