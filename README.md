@@ -194,7 +194,7 @@ GROUP BY category;
 ## Installation and Setup
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/netflix-sql-analysis.git
+   [(https://github.com/Diganta404/Netflix_Data-Analysis-SQL)]
 
 
 2. Set up PostgreSQL and import the dataset.
