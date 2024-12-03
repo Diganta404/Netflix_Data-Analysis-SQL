@@ -201,7 +201,7 @@ GROUP BY category;
 
 
 2. Set up PostgreSQL and import the dataset.
-3. Run the SQL scripts in the `queries` folder.
+3. Run the SQL scripts in the `solution.sql` folder.
 
 ## Contributing
 Contributions are welcome! If you have any queries or want to add new analyses, feel free to open a pull request.
