@@ -25,6 +25,9 @@ The Netflix dataset schema:
 | `description`    | VARCHAR(250) | Brief summary of the content.        |
 
 
+## Key Queries and Insights
+
+
 ### 1. Most Popular Genres Globally
 This query explores the most popular genres in Netflix’s content library.
 
